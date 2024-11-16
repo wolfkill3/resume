@@ -1,7 +1,9 @@
 .footer-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   background: black;
   color: white;
   font-family: MainFont, sans-serif;

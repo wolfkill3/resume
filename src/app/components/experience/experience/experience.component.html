@@ -2,27 +2,139 @@
   <button class="title hover-title" (click)="commercialClick()">Commercial Experience</button>
   <div class="exp" [@dropdown]="commercial ? 'open' : 'closed'">
     <app-step
-      [title]="'~ % Sberbank'"
+      [title]="'~ % Sberbank/Bell Integrator'"
       [text]="
-              'From 10 June 2024 - Present \n' +
+              'From 10 June 2024 - Present (outstaffed to Sberbank)\n' +
               'Developing the App which supports loan analysts to manage bank loans.\n' +
               '\n' +
               'Work as senior backend developer in team consisting of:\n' +
               '1 backend developer, 1 frontend developer, 1 analyst.\n' +
               '\n' +
               'Java 17, Spring Boot, PostgreSQL, Redis, OpenShift,\n' +
-              'Microservices, Maven, Hibernate \n'// +
-              // 'Read More: https://www.kommersant.ru/doc/6932867'
-    "></app-step>
-    <app-step [title]="'~ % Bank St. Petersburg'" [text]="'test2'"></app-step>
-    <app-step [title]="'~ % ID - Technologies of Management'" [text]="'test3'"></app-step>
-    <app-step [title]="'~ % BaltInfoCom'" [text]="'test4'"></app-step>
+              'Microservices, Maven, Hibernate \n'"
+      [cards]="[{
+        title: 'Article on Kommersant.ru',
+        url: 'https://www.kommersant.ru/doc/6932867',
+      },{
+        title: 'Sberbank',
+        url: 'https://www.sberbank.ru/',
+      },{
+        title: 'Bell Integrator',
+        url: 'https://www.bellintegrator.ru/',
+      }]"
+    ></app-step>
+    <app-step
+      [title]="'~ % Bank St. Petersburg'"
+      [text]="'From 25 September 2023 - 10 June 2024 \n' +
+              'Developing the Apps which help data engineers to work with big data.\n' +
+              'Making views, jobs for dala loading, web app for configuring new views.\n' +
+              '\n' +
+              'Work as senior software engineer in team consisting of:\n' +
+              '2 backend developers, 3 data engineers, 1 analyst.\n' +
+              '\n' +
+              'Java 8, Spring Boot, PostgreSQL, Apache Spark, Hive, Hadoop, Maven, Hibernate, \n' +
+              'Angular 18, TypeScript, CSS, HTML'"
+      [cards]="[{
+        title: 'Bank St. Petersburg',
+        url: 'https://www.bspb.ru/',
+      }]"
+    ></app-step>
+    <app-step
+      [title]="'~ % ID - Technologies of Management'"
+      [text]="'From 10 January 2022 - 25 September 2023 \n'+
+              'Developing a generic digital document management system.\n' +
+              '\n' +
+              'Work as backend developer in team consisting of:\n' +
+              '5 backend developers, 1 frontend developer, 1 analyst, 2 qa engineers.\n' +
+              '\n' +
+              'Java 11, Google Guice, PostgreSQL, ElasticSearch, Jenkins, Activiti BPMN, Maven, Apache Ant'"
+      [cards]="[{
+        title: 'ID - Technologies of Management',
+        url: 'https://www.id-mt.ru/',
+      }]"
+    ></app-step>
+    <app-step
+      [title]="'~ % BaltInfoCom'"
+      [text]="'From 10 January 2021 - 10 January 2022 \n' +
+              'Developing a system for concentrate information by OSINT technologies about people, places, companies, etc. \n' +
+              '\n' +
+              'Work as junior backend developer in team consisting of:\n' +
+              '3 backend developer, 3 frontend developer, 1 analyst, 2 qa engineers.\n' +
+              '\n' +
+              'Java 11, Spring Boot, PostgreSQL, JanusGraph, Hibernate, Maven, Jenkins'"
+      [cards]="[{
+        title: 'BaltInfoCom',
+        url: 'https://baltinfocom.ru/',
+      }]"
+    ></app-step>
   </div>
 
   <button class="title hover-title" (click)="nonCommercialClick()">Non-Commercial Experience</button>
   <div class="exp" [@dropdown]="nonCommercial ? 'open' : 'closed'">
-    <app-step [title]="'~ % Choice Battle'" [text]="'test5'"></app-step>
-    <app-step [title]="'~ % Choice Battle'" [text]="'test6'"></app-step>
-    <app-step [title]="'~ % Choice Battle'" [text]="'test7'"></app-step>
+    <app-step
+      [title]="'~ % Choice Battle'"
+      [text]="'From 01 March 2011 - 10 July 2019 \n' +
+      'Developing a Warcraft 3 custom map (game).\n' +
+      '\n' +
+      'That map was popular in the CIS region and China.\n' +
+      '\n' +
+      'Today I\'m a lead game design consultant, development transferred to the open source'"
+      [cards]="[{
+        title: 'Gameplay example',
+        url: 'https://www.youtube.com/watch?v=WFA6uTnO4JQ',
+      },{
+        title: 'VK',
+        url: 'https://vk.com/opchoice',
+      },{
+        title: 'XGM',
+        url: 'https://xgm.guru/p/wc3/choicebattle2',
+      }
+      ]"
+    ></app-step>
+  </div>
+  <button class="title hover-title" (click)="educationClick()">Education</button>
+  <div class="exp" [@dropdown]="education ? 'open' : 'closed'">
+    <app-step
+      [title]="'~ % St. Petersburg State University of Telecommunications'"
+      [text]="'From 01 September 2020 - 01 September 2022 \n' +
+              'Master\'s degree in Information Technologies\n' +
+              '\n' +
+              'Master\'s thesis theme:\n' +
+              'Predicting a dangerous situation using a neural network \n' +
+              'Using technologies: \n' +
+              'Java 17, Spring Boot, PostgreSQL, Python, Flask, React, JavaScript, HTML, CSS'"
+      [cards]="[{
+        title: 'St. Petersburg State University of Telecommunications',
+        url: 'https://www.sut.ru/',
+      }]"
+    ></app-step>
+    <app-step
+      [title]="'~ % Voronezh State Technical University'"
+      [text]="'From 01 September 2015 - 01 September 2019 \n' +
+              'Bachelor\'s degree in Electrical Engineering\n' +
+              '\n' +
+              'Bachelor\'s thesis theme:\n' +
+              'Develop a uninterruptible power supply'"
+      [cards]="[{
+        title: 'Voronezh State Technical University',
+        url: 'https://cchgeu.ru/index.php',
+      }]"
+    ></app-step>
+  </div>
+  <button class="title hover-title" (click)="bioClick()">BIO</button>
+  <div class="exp" [@dropdown]="bio ? 'open' : 'closed'">
+    <app-step
+      [title]="'~ % Interests'"
+      [text]="'Programming, travelling, skateboarding, ping pong, walking, reading programming articles, listening podcasts.\n' +
+      '\n' +
+      'Complete books: \n' +
+      'Clean Code, Grokking Algorithms, Clean Architecture, Perfect Programmer: How to become a professional programmer'
+"
+    ></app-step>
+    <app-step
+      [title]="'~ % General Information'"
+      [text]="'Remote worker\n' +
+              'Reserve Lieutenant \n'"
+    ></app-step>
   </div>
 </div>

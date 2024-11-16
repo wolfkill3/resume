@@ -4,7 +4,6 @@
   align-items: flex-start;
   border-radius: 5px;
   border: 2px solid var(--main-color);
-  //box-shadow: 1px 1px 5px var(--main-color);
   margin: 10px;
 }
 
@@ -36,7 +35,6 @@
   border-radius: 50%;
   border: 2px solid var(--main-color);
   margin-left: 20px;
-  //box-shadow: 1px 1px 5px var(--main-color);
 }
 
 .contacts-container {
@@ -59,8 +57,6 @@
 }
 
 .contacts-list {
-  //border-radius: 5px;
-  //border: 2px solid var(--main-color);
   display: flex;
   flex-direction: row;
   justify-content: center;

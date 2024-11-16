@@ -1,6 +1,8 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {NgIf} from '@angular/common';
 import {TerminalService} from '../../../terminal/service/terminal.service';
+import {FooterService} from '../../../footer/service/footer.service';
+import {Card} from '../../../footer/cards/card';
 
 @Component({
   selector: 'app-step',
@@ -12,12 +14,14 @@ import {TerminalService} from '../../../terminal/service/terminal.service';
   styleUrl: './step.component.scss'
 })
 export class StepComponent {
-  @Input() title: string = ''; // Текст кнопки
-  @Input() text: string = ''; // Текст, связанный с кнопкой
+  @Input() title: string = '';
+  @Input() text: string = '';
+  @Input() cards: Card[] = []
 
-  constructor(private terminalService: TerminalService) {}
+  constructor(private terminalService: TerminalService, private footerService: FooterService) {}
 
   onClick() {
     this.terminalService.updateTerminalText(this.title + '\n' + this.text);
+    this.footerService.updateFooterCards(this.cards);
   }
 }

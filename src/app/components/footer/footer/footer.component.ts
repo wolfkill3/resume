@@ -20,9 +20,9 @@ export class FooterComponent {
   constructor(private footerService: FooterService) {}
 
   ngOnInit() {
-    // Подписываемся на обновления текста
     this.footerService.footerContent$.subscribe((cards: Card[]) => {
-
+      this.cards = [];
+      cards.forEach(card => {this.cards.push(card)});
     });
   }
 }

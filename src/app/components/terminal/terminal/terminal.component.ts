@@ -19,12 +19,11 @@ export class TerminalComponent {
   constructor(private terminalService: TerminalService) {}
 
   ngOnInit() {
-    // Подписываемся на обновления текста
     this.terminalService.terminalText$.subscribe((newText) => {
       if (this.isTyping) return;
-      this.displayedText = []; // Очищаем старый текст
+      this.displayedText = [];
       this.typingIndex = 0;
-      this.typeText(newText); // Печатаем новый текст
+      this.typeText(newText);
     });
   }
 
@@ -36,7 +35,7 @@ export class TerminalComponent {
       if (this.typingIndex < textArray.length) {
         this.displayedText.push(textArray[this.typingIndex]);
         this.typingIndex++;
-        setTimeout(typeNextCharacter, 20); // Скорость печати
+        setTimeout(typeNextCharacter, 5);
       } else {
         this.isTyping = false;
       }

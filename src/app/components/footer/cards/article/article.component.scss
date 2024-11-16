@@ -1,0 +1,28 @@
+.article-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: MainFont, sans-serif;
+}
+
+.article-hover {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 330px;
+  margin: 5px;
+}
+
+.article-hover:hover {
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+}

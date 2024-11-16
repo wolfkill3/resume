@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
+import {Card} from '../cards/card';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FooterService {
-  private footerContent = new BehaviorSubject<any>('');
+  private footerContent = new BehaviorSubject<Card[]>([]);
   footerContent$ = this.footerContent.asObservable();
 
-  // Метод для обновления текста
-  updateTerminalText(newText: any) {
+  updateFooterCards(newText: Card[]) {
     this.footerContent.next(newText);
   }
 

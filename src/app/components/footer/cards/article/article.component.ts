@@ -6,7 +6,7 @@ import {Card} from '../card';
   standalone: true,
   imports: [],
   templateUrl: './article.component.html',
-  styleUrl: './article.component.css'
+  styleUrl: './article.component.scss'
 })
 export class ArticleComponent implements Card {
   @Input() url!: string;
