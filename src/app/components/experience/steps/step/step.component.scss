@@ -1,0 +1,36 @@
+.step-container {
+  display: flex;
+  flex-direction: row;
+  align-content: start;
+  align-items: start;
+  justify-content: start;
+  //border: 1px solid var(--main-color);
+  //border-radius: 5px;
+  //box-shadow: 1px 1px 5px var(--main-color);
+  width: 330px;
+  margin: 5px;
+}
+
+.experience-btn {
+  border: 0;
+  background-color: black;
+  color: white;
+  font-family: MainFont, sans-serif;
+}
+
+.step-hover {
+  display: flex;
+  flex-direction: row;
+  align-content: start;
+  align-items: start;
+  justify-content: start;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 330px;
+  margin: 5px;
+}
+
+.step-hover:hover {
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+}

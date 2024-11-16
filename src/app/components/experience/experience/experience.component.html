@@ -1,0 +1,16 @@
+<div class="experience">
+  <button class="title hover-title" (click)="commercialClick()">Commercial Experience</button>
+  <div class="exp" [@dropdown]="commercial ? 'open' : 'closed'">
+    <app-step [title]="'~ % Sberbank'"></app-step>
+    <app-step [title]="'~ % Bank St. Petersburg'"></app-step>
+    <app-step [title]="'~ % ID - Technologies of Management'"></app-step>
+    <app-step [title]="'~ % BaltInfoCom'"></app-step>
+  </div>
+
+  <button class="title hover-title" (click)="nonCommercialClick()">Non-Commercial Experience</button>
+  <div class="exp" [@dropdown]="nonCommercial ? 'open' : 'closed'">
+      <app-step [title]="'~ % Choice Battle'"></app-step>
+      <app-step [title]="'~ % Choice Battle'"></app-step>
+      <app-step [title]="'~ % Choice Battle'"></app-step>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+:root {
+  //--main-color: #ae24db;
+  //--main-color: #c58eff;
+  --main-color: rgb(124, 189, 236);
+}
+
+@font-face {
+  font-family: MainFont;
+  src: url('static/fonts/JetBrainsMono-Light.woff2');
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: MainFont, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+

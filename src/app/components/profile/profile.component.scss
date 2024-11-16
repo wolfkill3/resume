@@ -1,0 +1,84 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  //box-shadow: 1px 1px 5px var(--main-color);
+  margin: 10px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 340px;
+  min-width: 800px;
+}
+
+.avatar-and-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  margin-left: 20px;
+  //box-shadow: 1px 1px 5px var(--main-color);
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 0;
+}
+
+.contacts {
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  box-shadow: 1px 1px 5px var(--main-color);
+  background-color: var(--main-color);
+  color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.contacts-list {
+  //border-radius: 5px;
+  //border: 2px solid var(--main-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.contact {
+  margin: 5px 10px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+}
+
+.contact-icon {
+  border-radius: 50%;
+  margin: 0;
+}
