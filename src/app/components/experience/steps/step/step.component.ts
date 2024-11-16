@@ -1,5 +1,6 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {NgIf} from '@angular/common';
+import {TerminalService} from '../../../terminal/service/terminal.service';
 
 @Component({
   selector: 'app-step',
@@ -11,18 +12,12 @@ import {NgIf} from '@angular/common';
   styleUrl: './step.component.scss'
 })
 export class StepComponent {
-  @Input() title! : string
-  titleReplacement  = this.title;
-  isDropdownOpen: boolean = false;
+  @Input() title: string = ''; // Текст кнопки
+  @Input() text: string = ''; // Текст, связанный с кнопкой
 
+  constructor(private terminalService: TerminalService) {}
 
-
-  dropDownExp() {
-    this.isDropdownOpen = !this.isDropdownOpen;
-    this.title = this.isDropdownOpen ? '' : this.titleReplacement;
-  }
-
-  closeDropdown() {
-    this.isDropdownOpen = false;
+  onClick() {
+    this.terminalService.updateTerminalText(this.title + '\n' + this.text);
   }
 }

@@ -1,16 +1,28 @@
 <div class="experience">
   <button class="title hover-title" (click)="commercialClick()">Commercial Experience</button>
   <div class="exp" [@dropdown]="commercial ? 'open' : 'closed'">
-    <app-step [title]="'~ % Sberbank'"></app-step>
-    <app-step [title]="'~ % Bank St. Petersburg'"></app-step>
-    <app-step [title]="'~ % ID - Technologies of Management'"></app-step>
-    <app-step [title]="'~ % BaltInfoCom'"></app-step>
+    <app-step
+      [title]="'~ % Sberbank'"
+      [text]="
+              'From 10 June 2024 - Present \n' +
+              'Developing the App which supports loan analysts to manage bank loans.\n' +
+              '\n' +
+              'Work as senior backend developer in team consisting of:\n' +
+              '1 backend developer, 1 frontend developer, 1 analyst.\n' +
+              '\n' +
+              'Java 17, Spring Boot, PostgreSQL, Redis, OpenShift,\n' +
+              'Microservices, Maven, Hibernate \n'// +
+              // 'Read More: https://www.kommersant.ru/doc/6932867'
+    "></app-step>
+    <app-step [title]="'~ % Bank St. Petersburg'" [text]="'test2'"></app-step>
+    <app-step [title]="'~ % ID - Technologies of Management'" [text]="'test3'"></app-step>
+    <app-step [title]="'~ % BaltInfoCom'" [text]="'test4'"></app-step>
   </div>
 
   <button class="title hover-title" (click)="nonCommercialClick()">Non-Commercial Experience</button>
   <div class="exp" [@dropdown]="nonCommercial ? 'open' : 'closed'">
-      <app-step [title]="'~ % Choice Battle'"></app-step>
-      <app-step [title]="'~ % Choice Battle'"></app-step>
-      <app-step [title]="'~ % Choice Battle'"></app-step>
+    <app-step [title]="'~ % Choice Battle'" [text]="'test5'"></app-step>
+    <app-step [title]="'~ % Choice Battle'" [text]="'test6'"></app-step>
+    <app-step [title]="'~ % Choice Battle'" [text]="'test7'"></app-step>
   </div>
 </div>

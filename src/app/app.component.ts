@@ -4,6 +4,8 @@ import {ProfileComponent} from './components/profile/profile.component';
 import {ExperienceComponent} from './components/experience/experience/experience.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
+import {TerminalComponent} from './components/terminal/terminal/terminal.component';
+import {FooterComponent} from './components/footer/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,9 @@ import {CommonModule} from '@angular/common';
     CommonModule,
     RouterOutlet,
     ProfileComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    TerminalComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

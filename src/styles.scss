@@ -2,6 +2,12 @@
   //--main-color: #ae24db;
   //--main-color: #c58eff;
   --main-color: rgb(124, 189, 236);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  box-sizing: content-box;
 }
 
 @font-face {
@@ -19,8 +25,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
   align-content: center;
+  align-items: center;
 }
 
 

@@ -1,0 +1,18 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background: black;
+  color: white;
+  font-family: MainFont, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  width: 1144px;
+  height: 100px;
+  overflow: hidden;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  white-space: pre-line;
+  margin-top: 10px;
+  margin-left: 10px;
+}
